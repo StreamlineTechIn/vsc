@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+    window.flutterWebRenderer = "html";
+  </script>
+
+<!--  <base href="/http://chunavguide.com/">-->
+  <base href="/http://chunavguide.com/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="mhkcde">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+  <!-- Favicon -->
+<!--  <link rel="icon" type="image/png" href="favicon.png"/>-->
+  <link rel="icon" type="image/png" href="logo.png"/>
+
+  <title>mhkcde</title>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: 'AIzaSyCSuAZkjP580yj7A1VfPgx6ruoBuQO5EB4',
+      appId: '1:610825605960:web:19e08d1e3de4c44d42597d',
+      messagingSenderId: '610825605960',
+      projectId: 'mhkcde',
+      authDomain: 'mhkcde.firebaseapp.com',
+      storageBucket: 'mhkcde.appspot.com',
+      measurementId: 'G-BHCSY7PV5B',
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    document.onkeydown = function(e) {
+      // F12 key
+      if(e.keyCode == 123) {
+        return false;
+      }
+      // Ctrl+Shift+I
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      // Ctrl+Shift+C
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+      }
+      // Ctrl+Shift+J
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+      // Ctrl+U
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+<script src="flutter_bootstrap.js" async></script>
+
+<script>
+  function onEntrypointLoaded(engineInitializer) {
+    let config = { renderer: 'html' };
+    engineInitializer.initializeEngine(config).then(function(appRunner) {
+      appRunner.runApp();
+    });
+  }
+</script>
+</body>
+</html>
+
+<!--  <script>-->
+<!--  document.addEventListener('contextmenu', function(e) {-->
+<!--    e.preventDefault();-->
+<!--  });-->
+
+<!--  document.onkeydown = function(e) {-->
+<!--    // F12 key-->
+<!--    if(e.keyCode == 123) {-->
+<!--      return false;-->
+<!--    }-->
+<!--    // Ctrl+Shift+I-->
+<!--    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {-->
+<!--      return false;-->
+<!--    }-->
+<!--    // Ctrl+Shift+C-->
+<!--    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {-->
+<!--      return false;-->
+<!--    }-->
+<!--    // Ctrl+Shift+J-->
+<!--    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {-->
+<!--      return false;-->
+<!--    }-->
+<!--    // Ctrl+U-->
+<!--    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {-->
+<!--      return false;-->
+<!--    }-->
+<!--  }-->
+<!--</script>-->
